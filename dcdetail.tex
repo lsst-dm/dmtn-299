@@ -1,0 +1,22 @@
+\section{Data Center details} \label{sec:dcdetail}
+Here are some supporting calculations and thoughts for the data center presented in \secref{sec:dc}.
+
+
+\subsection{Cloud cost estimate}\label{dec:cloudcost}
+Storing a large volume of images and catalogs would be expensive on normal rates as shown in \tabref{tab:dr1cost}.
+This should drop by 40-50\% with volume discounts and agreements e.g some public data sets are hosted at low or zero cost.
+The DR1 costs is CPU not GPU based so AI would bring in higher costs and probably higher usage (the hours were includes).
+
+\input{dr1cost.tex}
+
+The costs in \tabref{tab:dr1cost} are scaled from DP0 actual costs for March 2024 on google.
+We should bear in mind almost no discounts remained by March 2024 on our agreement so this is an upper bound cost.
+
+\input{dp0cost.tex}
+
+\subsection{Lower bound}
+The average annual running cost of Rubin USDF hardware would be a lower bound since we would want at least the Rubin data and probably more compute.
+The average annual Rubin cost with some hardware support estimated is shown in \tabref{tab:rubincost}.
+\input{rubincost.tex}
+
+

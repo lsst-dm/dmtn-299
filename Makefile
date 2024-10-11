@@ -47,3 +47,11 @@ meta.tex: Makefile .FORCE
 	printf '\\newcommand{\\lsstDocNum}{$(DOCNUMBER)}\n' >>$@
 	printf '\\newcommand{\\vcsRevision}{$(GITVERSION)$(GITDIRTY)}\n' >>$@
 	printf '\\newcommand{\\vcsDate}{$(GITDATE)}\n' >>$@
+
+
+
+gdepend:
+	pip install --upgrade google-api-python-client google-auth-httplib2  google-auth-oauthlib  oauth2client
+tables:
+	makeTablesFromGoogle.py 1R15IybTnxnqau_fDAM1MEh2HBiBUWkcj46SO70pxSrQ Fast\!A1:H 
+

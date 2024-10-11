@@ -27,8 +27,11 @@ Clone this repository::
     git clone --recurse-submodules https://github.com/lsst-dm/dmtn-299
 
 Compile the PDF::
-
+  
+    make gdepend tables
     make
+
+You may need to ask womullan for client_secret.json
 
 Clean built files::
 

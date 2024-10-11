@@ -35,7 +35,7 @@ William O'Mullane
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-Some thoughts on such a facility. 
+Some thoughts on such a facility.
 }
 
 % Change history defined here.
@@ -50,16 +50,14 @@ Some thoughts on such a facility.
 \begin{document}
 
 % Create the title page.
-\maketitle
+\mkshorttitle
 % Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
 % use \mkshorttitle to remove the extra pages
 
-% ADD CONTENT HERE
-% You can also use the \input command to include several content files.
+\input{body.tex}
 
 \appendix
-% Include all the relevant bib files.
-% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+\input{dcdetail}
 \section{References} \label{sec:bib}
 \renewcommand{\refname}{} % Suppress default Bibliography section
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
